@@ -14,11 +14,6 @@ import com.android.volley.toolbox.StringRequest;
 public class Api_calling extends AppCompatActivity {
 
 
-    EditText   editText;
-    EditText editText2;
-    Button button;
-    TextView textView;
-
 
 
     @Override
@@ -27,28 +22,6 @@ public class Api_calling extends AppCompatActivity {
         setContentView(R.layout.api_calling_activity);
 
 
-        editText = findViewById(R.id.editText_1);
-        editText2= findViewById(R.id.editText_2);
-        button= findViewById(R.id.btn_submit);
-        textView= findViewById(R.id.textview);
-
-    //Button Calling
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //Api calling Method
-                processdata(editText.getText().toString(),editText2.getText().toString());
-
-
-            }
-        });
-
     }
 
-    public void processdata(final String name, final String email)
-    {
-
-
-    }
 }
